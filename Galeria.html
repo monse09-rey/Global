@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="ejercio.css">
+    <link rel="stylesheet" href="Galeria.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Ejercio 3.html">
+                <img class="logo" style="color: rgb(0, 0, 0);" src="imagenes/oxi574znoz9zmb4uDQk-o.png" alt="logo">
+            </a>
+            <ul class="enlaces-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="album.html">Discografía</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+                <li><a href="Video.html">Videos</a></li>
+                <li><a href="Información.html">Noticias</a></li>
+            </ul>
+             <button class="ham" type="button">
+                <span class="br1"></span>
+                <span class="br2"></span>
+                <span class="br3"></span>
+                <span class="br4"></span>
+             </button>
+        </nav>
+        <!--Imagenes con zomm-->
+        <div class="container">          
+            <div class="image-container">
+                <div class="image"><img src="Imagenes del grupo/01.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/02.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/03.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/04.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/05.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/06.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/07.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/08.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p1.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p2.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p3.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p4.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p5.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p7.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p8.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p9.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p10.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p11.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p12.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p13.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p14.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p15.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p16.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p17.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p18.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p19.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p20.jpg" alt=""></div>
+                <div class="image"><img src="Imagenes del grupo/p21.jpg" alt=""></div>
+
+       
+            </div>
+            <div class="popup-image">
+                <span> &times;</span>
+                <img src="img/07.jpg" alt="">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image =>{
+                image.onclick = () =>{
+                    document.querySelector('.popup-image') .style.display = 'block';
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                }
+                
+            });
+            document.querySelector('.popup-image span').onclick = () =>{
+                document.querySelector('.popup-image') .style.display = 'none';
+            }
+        </script>
+
+
+    <script src="menu.js"></script> 
+</body>
+</html>
